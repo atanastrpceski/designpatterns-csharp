@@ -1,7 +1,7 @@
 # DesignPatterns in C#
 
-Creational
-	- Builder: Step by step object creating
-	- Factory: Wholesale object creation
-	- Protoype: Create an object by copying an existing object (clone)
+Creational <br>
+	- Builder: Step by step object creating <br>
+	- Factory: Wholesale object creation <br>
+	- Protoype: Create an object by copying an existing object (clone) <br>
 
