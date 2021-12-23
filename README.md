@@ -37,23 +37,25 @@ Structural
 	- Composite: 	A mechanism for treating individual (scalar) objects and compositions (like IEnumerable) of those same objects in a 
 			uniform matter. (Masquerade a single object as a collection (yield return this)).
 			If you have an object tree, and each object of a tree is a part of the same class hierarchy, this is most likely a 
-			composite. If methods of these classes delegate the work to child objects of the tree and do it via the base class/interface 
-			of the hierarchy, this is definitely a composite.
+			composite. If methods of these classes delegate the work to child objects of the tree and do it via the base 
+			class/interface of the hierarchy, this is definitely a composite.
 
 	- Decorator:	Facilitates the addition of behaviors to individual objects without inheriting from them.
-			Decorator can be recognized by creation methods or constructor that accept objects of the same class or interface as a current class.
+			Decorator can be recognized by creation methods or constructor that accept objects of the same class or interface as 
+			a current class.
 
 	- Facade:	Provides a simple, easy to understand user interface over a large and sophisticated body of code.
-			Facade can be recognized in a class that has a simple interface, but delegates most of the work to other classes. Usually, facades manage 
-			the full life cycle of objects they use.
+			Facade can be recognized in a class that has a simple interface, but delegates most of the work to other classes. 
+			Usually, facades manage the full life cycle of objects they use.
 
-	- Flyweight:	A space optimization technique that lets us use less memory by storing externally the data associated with similar objects.
+	- Flyweight:	A space optimization technique that lets us use less memory by storing externally the data associated with similar 
+			objects.
 			Flyweight can be recognized by a creation method that returns cached objects instead of creating new.
 
-	- Proxy:	A class hat functions as an interface to a particular resource. That resource may be remote, expensive to construct or some other added 
-			functionality.
-			Proxies (unlike decorators) are mostly used to restrict the client. Proxies delegate all of the real work to some other object. 
-			Each proxy method should, in the end, refer to a service object unless the proxy is a subclass of a service.
+	- Proxy:	A class hat functions as an interface to a particular resource. That resource may be remote, expensive to construct or 
+			some other added functionality.
+			Proxies (unlike decorators) are mostly used to restrict the client. Proxies delegate all of the real work to some other 
+			object. Each proxy method should, in the end, refer to a service object unless the proxy is a subclass of a service.
 
 Behavioral
 
