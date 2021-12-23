@@ -37,7 +37,8 @@ Structural
 	- Composite: 	A mechanism for treating individual (scalar) objects and compositions (like IEnumerable) of those same objects in 
 			a uniform matter. (Masquerade a single object as a collection (yield return this)).
 			If you have an object tree, and each object of a tree is a part of the same class hierarchy, this is most likely a 
-			composite. If methods of these classes delegate the work to child objects of the tree and do it via the base 
+			composite. 
+			If methods of these classes delegate the work to child objects of the tree and do it via the base 
 			class/interface of the hierarchy, this is definitely a composite.
 
 	- Decorator:	Facilitates the addition of behaviors to individual objects without inheriting from them.
