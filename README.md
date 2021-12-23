@@ -3,15 +3,17 @@
 Creational
 
 	- Builder:	Step by step object creating.
-			The Builder pattern can be recognized in a class, which has a single creation method and several methods to configure the resulting object. 
+			The Builder pattern can be recognized in a class, which has a single creation method and several methods to 
+			configure the resulting object. 
 			Builder methods often support chaining (for example, someBuilder->setValueA(1)->setValueB(2)->create()).
 
 	- Factory:	Wholesale object creation.
-			Factory methods can be recognized by creation methods, which create objects from concrete classes, but return them as objects of abstract 
-			type or interface.
+			Factory methods can be recognized by creation methods, which create objects from concrete classes, but return 
+			them as objects of abstract type or interface.
 
 	- Abstract Factory: 	Wholesale object creation without specifying their concrete classes.
-				The pattern is easy to recognize by methods, which return a factory object. Then, the factory is used for creating specific sub-components.
+				The pattern is easy to recognize by methods, which return a factory object. Then, the factory is used 
+				for creating specific sub-components.
 
 	- Protoype: 	Create an object by copying an existing object (clone).
 			The prototype can be easily recognized by a clone or copy methods, etc.
@@ -23,19 +25,20 @@ Creational
 Structural
 
 	- Adapter:	Get the interface you want from the interface you have.
-			Adapter is recognizable by a constructor which takes an instance of a different abstract/interface type. When the adapter receives a 
-			call to any of its methods, it translates parameters to the appropriate format and then directs the call to one or several 
-			methods of the wrapped object.
+			Adapter is recognizable by a constructor which takes an instance of a different abstract/interface type. When 
+			the adapter receives a call to any of its methods, it translates parameters to the appropriate format and then 
+			directs the call to one or several methods of the wrapped object.
 
-	- Bridge:	A mechanism that completely decouples an interface (hierarchy) from an implementation (hierarchy). Prevents a cartesian product in 
-			the hierarchy chain.
-			Bridge can be recognized by a clear distinction between some controlling entity and several different platforms that it relies on.
+	- Bridge:	A mechanism that completely decouples an interface (hierarchy) from an implementation (hierarchy). Prevents a 
+			cartesian product in the hierarchy chain.
+			Bridge can be recognized by a clear distinction between some controlling entity and several different platforms 
+			that it relies on.
 
-	- Composite: 	A mechanism for treating individual (scalar) objects and compositions (like IEnumerable) of those same objects in a uniform matter. 
-		 	(Masquerade a single object as a collection (yield return this)).
-			If you have an object tree, and each object of a tree is a part of the same class hierarchy, this is most likely a composite. If methods of 
-			these classes delegate the work to child objects of the tree and do it via the base class/interface of the hierarchy, this is definitely 
-			a composite.
+	- Composite: 	A mechanism for treating individual (scalar) objects and compositions (like IEnumerable) of those same objects in a 
+			uniform matter. (Masquerade a single object as a collection (yield return this)).
+			If you have an object tree, and each object of a tree is a part of the same class hierarchy, this is most likely a 
+			composite. If methods of these classes delegate the work to child objects of the tree and do it via the base class/interface 
+			of the hierarchy, this is definitely a composite.
 
 	- Decorator:	Facilitates the addition of behaviors to individual objects without inheriting from them.
 			Decorator can be recognized by creation methods or constructor that accept objects of the same class or interface as a current class.
