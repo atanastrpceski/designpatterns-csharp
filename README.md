@@ -34,15 +34,15 @@ Structural
 			Bridge can be recognized by a clear distinction between some controlling entity and several different platforms 
 			that it relies on.
 
-	- Composite: 	A mechanism for treating individual (scalar) objects and compositions (like IEnumerable) of those same objects in a 
-			uniform matter. (Masquerade a single object as a collection (yield return this)).
+	- Composite: 	A mechanism for treating individual (scalar) objects and compositions (like IEnumerable) of those same objects in 
+			a uniform matter. (Masquerade a single object as a collection (yield return this)).
 			If you have an object tree, and each object of a tree is a part of the same class hierarchy, this is most likely a 
 			composite. If methods of these classes delegate the work to child objects of the tree and do it via the base 
 			class/interface of the hierarchy, this is definitely a composite.
 
 	- Decorator:	Facilitates the addition of behaviors to individual objects without inheriting from them.
-			Decorator can be recognized by creation methods or constructor that accept objects of the same class or interface as 
-			a current class.
+			Decorator can be recognized by creation methods or constructor that accept objects of the same class or interface
+			as a current class.
 
 	- Facade:	Provides a simple, easy to understand user interface over a large and sophisticated body of code.
 			Facade can be recognized in a class that has a simple interface, but delegates most of the work to other classes. 
@@ -62,14 +62,14 @@ Behavioral
 
 	- Observer: 	An observer is an object that wishes to be informed about events happening in the system. The entity generating the 
 			events is an observable.
-			The pattern can be recognized by subscription methods, that store objects in a list and by calls to the update method issued 
-			to objects in that list.
+			The pattern can be recognized by subscription methods, that store objects in a list and by calls to the update method
+			issued to objects in that list.
 
 	- Strategy: 	Enables the exact behavior of a system to be selected either at run-time (dynamic) or compile time (static).
-			You have more ways for doing an operation; with strategy, you can choose the algorithm at run-time and you can modify a single 
-			strategy without a lot of side-effects at compile-time;
-			Strategy pattern can be recognized by a method that lets nested object do the actual work, as well as the setter that allows 
-			replacing that object with a different one.
+			You have more ways for doing an operation; with strategy, you can choose the algorithm at run-time and you can modify 
+			a single strategy without a lot of side-effects at compile-time;
+			Strategy pattern can be recognized by a method that lets nested object do the actual work, as well as the setter that 
+			allows replacing that object with a different one.
 
 	- State:	A patern in which the object's behavior is determined by its state. An object transitions from one state to another.
 			(something needs to trigger the transition).
