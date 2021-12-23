@@ -3,21 +3,21 @@
 Creational
 
 	- Builder:	Step by step object creating.
-				The Builder pattern can be recognized in a class, which has a single creation method and several methods to configure the resulting object. 
-				Builder methods often support chaining (for example, someBuilder->setValueA(1)->setValueB(2)->create()).
+			The Builder pattern can be recognized in a class, which has a single creation method and several methods to configure the resulting object. 
+			Builder methods often support chaining (for example, someBuilder->setValueA(1)->setValueB(2)->create()).
 
 	- Factory:	Wholesale object creation.
-				Factory methods can be recognized by creation methods, which create objects from concrete classes, but return them as objects of abstract 
-				type or interface.
+			Factory methods can be recognized by creation methods, which create objects from concrete classes, but return them as objects of abstract 
+			type or interface.
 
-	- Abstract Factory: Wholesale object creation without specifying their concrete classes.
-						The pattern is easy to recognize by methods, which return a factory object. Then, the factory is used for creating specific sub-components.
+	- Abstract Factory: 	Wholesale object creation without specifying their concrete classes.
+				The pattern is easy to recognize by methods, which return a factory object. Then, the factory is used for creating specific sub-components.
 
-	- Protoype: Create an object by copying an existing object (clone).
-				The prototype can be easily recognized by a clone or copy methods, etc.
+	- Protoype: 	Create an object by copying an existing object (clone).
+			The prototype can be easily recognized by a clone or copy methods, etc.
 
 	- Singleton:	For some components it only makes sense do have only one in the system.
-					Singleton can be recognized by a static creation method, which returns the same cached object.
+			Singleton can be recognized by a static creation method, which returns the same cached object.
 
 
 Structural
@@ -66,7 +66,7 @@ Behavioral
 
 	- State:	A patern in which the object's behavior is determined by its state. An object transitions from one state to another.
 				(something needs to trigger the transition).
-				State pattern can be recognized by methods that change their behavior depending on the objectsí state, 
+				State pattern can be recognized by methods that change their behavior depending on the objects‚Äô state, 
 				controlled externally.
 
 	- Chain of Responsibility:	A chain of components who all get a chance to process a command or a query. Optionally having 
@@ -88,7 +88,7 @@ Behavioral
 				iterators might not have direct access to the collection being traversed.
 
 	- Template Method:	Allows us to define the "skeleton" of the algorithm with concrete implementations defined in subclasses.
-						Template Method can be recognized by behavioral methods that already have a ìdefaultî behavior defined 
+						Template Method can be recognized by behavioral methods that already have a ‚Äúdefault‚Äù behavior defined 
 						by the base class.
 						Template method works like a Strategy, but through Inheritance  
 
