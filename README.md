@@ -52,22 +52,24 @@ Structural
 			objects.
 			Flyweight can be recognized by a creation method that returns cached objects instead of creating new.
 
-	- Proxy:	A class hat functions as an interface to a particular resource. That resource may be remote, expensive to construct or 
-			some other added functionality.
-			Proxies (unlike decorators) are mostly used to restrict the client. Proxies delegate all of the real work to some other 
-			object. Each proxy method should, in the end, refer to a service object unless the proxy is a subclass of a service.
+	- Proxy:	A class hat functions as an interface to a particular resource. That resource may be remote, expensive to 
+			construct or some other added functionality.
+			Proxies (unlike decorators) are mostly used to restrict the client. Proxies delegate all of the real work to
+			some other object. Each proxy method should, in the end, refer to a service object unless the proxy is a subclass 
+			of a service.
 
 Behavioral
 
-	- Observer: 	An observer is an object that wishes to be informed about events happening in the system. The entity generating the events is an observable.
-			The pattern can be recognized by subscription methods, that store objects in a list and by calls to the update method issued to objects in 
-			that list.
+	- Observer: 	An observer is an object that wishes to be informed about events happening in the system. The entity generating the 
+			events is an observable.
+			The pattern can be recognized by subscription methods, that store objects in a list and by calls to the update method issued 
+			to objects in that list.
 
 	- Strategy: 	Enables the exact behavior of a system to be selected either at run-time (dynamic) or compile time (static).
 			You have more ways for doing an operation; with strategy, you can choose the algorithm at run-time and you can modify a single 
 			strategy without a lot of side-effects at compile-time;
-			Strategy pattern can be recognized by a method that lets nested object do the actual work, as well as the setter that allows replacing that object 
-			with a different one.
+			Strategy pattern can be recognized by a method that lets nested object do the actual work, as well as the setter that allows 
+			replacing that object with a different one.
 
 	- State:	A patern in which the object's behavior is determined by its state. An object transitions from one state to another.
 			(something needs to trigger the transition).
